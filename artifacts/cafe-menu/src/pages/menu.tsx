@@ -25,6 +25,7 @@ const categories = [
   { id: "specialty",    label: "مختصة",         icon: Star },
   { id: "fresh_juices", label: "عصائر",         icon: Droplets },
   { id: "cold_drinks",  label: "باردة",         icon: GlassWater },
+  { id: "iced_tea",     label: "الشاي المثلج",  icon: Snowflake },
   { id: "mojito",       label: "موهيتو",        icon: Leaf },
   { id: "milkshake",    label: "ميلك شيك",      icon: Milk },
   { id: "energy",       label: "طاقة",          icon: Zap },
@@ -41,6 +42,7 @@ const categoryGradients: Record<string, string> = {
   specialty:    "from-zinc-800 via-stone-700 to-zinc-900",
   fresh_juices: "from-orange-700 via-yellow-600 to-lime-700",
   cold_drinks:  "from-cyan-800 via-blue-700 to-indigo-800",
+  iced_tea:     "from-teal-800 via-lime-700 to-yellow-700",
   mojito:       "from-emerald-800 via-green-700 to-teal-800",
   milkshake:    "from-pink-800 via-rose-700 to-fuchsia-800",
   energy:       "from-yellow-700 via-orange-600 to-red-700",
@@ -52,7 +54,7 @@ const categoryGradients: Record<string, string> = {
 
 const categoryIcons: Record<string, string> = {
   hot_coffee: "☕", iced_coffee: "🧊", hot_drinks: "🍵",
-  specialty: "✨", fresh_juices: "🍊", cold_drinks: "🥤",
+  specialty: "✨", fresh_juices: "🍊", cold_drinks: "🥤", iced_tea: "🧊",
   mojito: "🌿", milkshake: "🥛", energy: "⚡", soft_drinks: "💧",
   crepe: "🥞", waffle: "🧇", pancake: "🥞",
 };
@@ -261,11 +263,8 @@ export default function MenuPage() {
       {/* Footer */}
       <footer className="border-t py-8 bg-card" dir="rtl">
         <div className="max-w-4xl mx-auto px-4 flex flex-col items-center gap-4">
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} كوفي أجواء — جميع الحقوق محفوظة
-          </p>
           <p className="text-xs text-muted-foreground/60">
-            تم انشاء هذا الموقع مع المطور المهندس علي خالد
+            تم انشاء هذا الموقع المطور المهندس علي خالد
           </p>
         </div>
       </footer>
@@ -274,3 +273,5 @@ export default function MenuPage() {
     </div>
   );
 }
+
+

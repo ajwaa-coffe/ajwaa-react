@@ -23,6 +23,7 @@ const categories = [
   { id: "specialty",    label: "مختصة" },
   { id: "fresh_juices", label: "عصائر طبيعية" },
   { id: "cold_drinks",  label: "مشروبات باردة" },
+  { id: "iced_tea",     label: "الشاي المثلج" },
   { id: "mojito",       label: "موهيتو" },
   { id: "milkshake",    label: "ميلك شيك" },
   { id: "energy",       label: "مشروبات طاقة" },
@@ -326,3 +327,5 @@ export default function AdminDashboard() {
     </div>
   );
 }
+
+

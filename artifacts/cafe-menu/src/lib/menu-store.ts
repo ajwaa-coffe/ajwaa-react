@@ -650,6 +650,123 @@ const INITIAL_MENU_ITEMS: MenuItem[] = [
         "category": "hot_coffee",
         "available": true,
         "sortOrder": 13
+    },
+    {
+        "id": 115,
+        "name": "ايس كركدي بالفراولة",
+        "description": null,
+        "price": 4000,
+        "category": "cold_drinks",
+        "available": true,
+        "sortOrder": 7
+    },
+    {
+        "id": 116,
+        "name": "ايس كركدي",
+        "description": null,
+        "price": 2000,
+        "category": "cold_drinks",
+        "available": true,
+        "sortOrder": 8
+    },
+    {
+        "id": 117,
+        "name": "ببسي",
+        "description": null,
+        "price": 1000,
+        "category": "soft_drinks",
+        "available": true,
+        "sortOrder": 3
+    },
+    {
+        "id": 118,
+        "name": "ببسي دايت",
+        "description": null,
+        "price": 1000,
+        "category": "soft_drinks",
+        "available": true,
+        "sortOrder": 4
+    },
+    {
+        "id": 119,
+        "name": "سفن آب",
+        "description": null,
+        "price": 1000,
+        "category": "soft_drinks",
+        "available": true,
+        "sortOrder": 5
+    },
+    {
+        "id": 120,
+        "name": "شاي مثلج بالخوخ",
+        "description": null,
+        "price": 3500,
+        "category": "iced_tea",
+        "available": true,
+        "sortOrder": 1
+    },
+    {
+        "id": 121,
+        "name": "شاي مثلج بالليمون",
+        "description": null,
+        "price": 3500,
+        "category": "iced_tea",
+        "available": true,
+        "sortOrder": 2
+    },
+    {
+        "id": 122,
+        "name": "شاي مثلج بالنعناع",
+        "description": null,
+        "price": 3500,
+        "category": "iced_tea",
+        "available": true,
+        "sortOrder": 3
+    },
+    {
+        "id": 123,
+        "name": "شاي مثلج مكس",
+        "description": null,
+        "price": 4000,
+        "category": "iced_tea",
+        "available": true,
+        "sortOrder": 4
+    },
+    {
+        "id": 124,
+        "name": "قجرات استكان",
+        "description": null,
+        "price": 500,
+        "category": "hot_drinks",
+        "available": true,
+        "sortOrder": 7
+    },
+    {
+        "id": 125,
+        "name": "قجرات كوب",
+        "description": null,
+        "price": 1000,
+        "category": "hot_drinks",
+        "available": true,
+        "sortOrder": 8
+    },
+    {
+        "id": 126,
+        "name": "نومي حامض استكان",
+        "description": null,
+        "price": 500,
+        "category": "hot_drinks",
+        "available": true,
+        "sortOrder": 9
+    },
+    {
+        "id": 127,
+        "name": "نومي حامض كوب",
+        "description": null,
+        "price": 1000,
+        "category": "hot_drinks",
+        "available": true,
+        "sortOrder": 10
     }
 ];
 let nextId = Math.max(...INITIAL_MENU_ITEMS.map((i) => i.id)) + 1;
@@ -706,3 +823,4 @@ export const useMenuStore = create<MenuStore>()(
     }
   )
 );
+
